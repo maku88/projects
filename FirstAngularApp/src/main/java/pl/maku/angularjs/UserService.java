@@ -3,6 +3,7 @@ package pl.maku.angularjs;
 import javax.json.JsonObject;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.Application;
 import java.util.ArrayList;
@@ -30,6 +31,12 @@ public class UserService {
         users.add(new User(4,"romek","romek@mail.com"));
         return users;
 
+    }
+
+    @GET
+    @Path("/{id}")
+    public User getUser(@PathParam("id") long id) {
+        return new User(1,"maciek","maku17");
     }
 
 

@@ -1,10 +1,27 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Start Page</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    </head>
-    <body>
-        <h1>Hello World!</h1>
-    </body>
+<!doctype html>
+<html ng-app>
+<head>
+    <title>Hello AngularJS</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+    <script src="js/hello.js"></script>
+</head>
+
+<body>
+<div ng-controller="Hello">
+    <p>imie {{greeting.name}}</p>
+    <p>mail {{greeting.email}}</p>
+</div>
+
+<div ng-controller="userControler">
+<table  >
+<tr ng-repeat="item in users ">
+    <td>{{item.id}}</td>
+    <td>{{item.name}}</td>
+    <td>{{item.email}}</td>
+</tr>
+</table>
+    </div>
+
+
+</body>
 </html>
