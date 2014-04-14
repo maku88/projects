@@ -1,0 +1,14 @@
+{
+  "version": "0.0.0",
+  "private": true,
+  "name": "FirstAngularUI",
+  "description": "A tutorial application for AngularJS",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^0.6.1"
+  },
+  "scripts": {
+
+    "start": "http-server -p 8000"
+  }
+}
