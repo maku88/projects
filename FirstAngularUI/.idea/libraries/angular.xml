@@ -10,6 +10,7 @@
       <root url="file://$PROJECT_DIR$/js/angular.js" />
       <root url="file://$PROJECT_DIR$/js/angular-route.js" />
     </CLASSES>
+    <JAVADOC />
     <SOURCES />
   </library>
 </component>

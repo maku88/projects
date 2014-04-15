@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../AngularBackend/AngularBackend.iml" filepath="$PROJECT_DIR$/../AngularBackend/AngularBackend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../AngularCRUD/AngularCRUD.iml" filepath="$PROJECT_DIR$/../AngularCRUD/AngularCRUD.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/FirstAngularUI.iml" filepath="$PROJECT_DIR$/.idea/FirstAngularUI.iml" />
     </modules>
   </component>

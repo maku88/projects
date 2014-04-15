@@ -6,14 +6,9 @@ var firstAngularUIControllers = angular.module('firstAngularUIControllers', []);
 
 firstAngularUIControllers.controller('TagListCtrl', ['$scope', '$http',
   function($scope, $http) {
-      $scope.tags = [
-          {'name': 'ABC',
-              'id': '1'},
-          {'name': 'DEF',
-              'id': '2'},
-          {'name': 'GHI',
-              'id': '3'}
-      ];
+      $http.get("http://localhost:8080/tags").success(function(data) {
+          $scope.tags= data;
+      });
   }]);
 
 
@@ -35,11 +30,13 @@ firstAngularUIControllers.controller('ActionListCtrl', ['$scope', '$http',
         ];
     }]);
 
-
-
 firstAngularUIControllers.controller('ActionDetailCtrl', ['$scope', '$routeParams',
     function($scope, $routeParams) {
         $scope.actionId = $routeParams.actionId;
+        $scope.action = [
+            {'name': 'Akcja 1',
+                'id': $routeParams.actionId}
+        ];
     }]);
 
 
